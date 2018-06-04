@@ -1,0 +1,55 @@
+﻿<h2>Flight Edition</h2>
+<hr />
+
+<editable-form (onSent)="updateCsv()">
+    <div class="form-group">
+        <label id="lbl_name" for="device_name">Identifier</label>
+        <input type="text" class="form-control" id="flight_identifier" [(ngModel)]="flight.identifier" name="flight_identifier"
+               minlength="1" maxlength="20" pattern="^$|^[A-Za-z0-9]+" #flightidentifier="ngModel" />
+        <!-- change after this comment -->
+        <div [hidden]="isModelValid(flightidentifier)" class="alert alert-danger">
+            <div [hidden]="!flightidentifier.hasError('minlength')">
+                The flight's identifier must contain at least one character.
+            </div>
+            <div [hidden]="!flightidentifier.hasError('maxlength')">
+                The flight's identifier must not exceed 50 characters
+            </div>
+            <div [hidden]="!flightidentifier.hasError('pattern')">
+                The flight's identifier must only contains
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label id="lbl_name" for="device_name">Departure from</label>
+        <select class="form-control" [(ngModel)]="flight.departureAirportId" #departureAirport="ngModel">
+            <option *ngFor="let airport of airports" value="{{airport.id}}">{{airport.name}}</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label id="lbl_name" for="device_name">Arrival to</label>
+        <select class="form-control" [(ngModel)]="flight.arrivalAirportId" #arrivalAirport="ngModel">
+            <option *ngFor="let airport of airports" value="{{airport.id}}">{{airport.name}}</option>
+        </select>
+    </div>
+    <div [hidden]="#departureAirport === #arrivalAirport" class="alert alert-danger">
+        Departure and destination can't be the same airport.'
+    </div>
+
+    <div class="form-group">
+        <label id="lbl_name" for="device_name">Aircraft</label>
+        <select class="form-control" [(ngModel)]="flight.aircraftId">
+            <option *ngFor="let airport of aircraft" value="{{aircraft.id}}">{{aircraft.name}}</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label id="lbl_name" for="device_name">Flight day</label>
+        <input type="radio" name="flight_day" value="DayOdWeek.None" [(ngModel)]="flight.day" hidden />
+        <input type="radio" name="flight_day" value="DayOdWeek.Monday" [(ngModel)]="flight.day" />
+        <input type="radio" name="flight_day" value="DayOdWeek.Tuesday" [(ngModel)]="flight.day" />
+        <input type="radio" name="flight_day" value="DayOdWeek.Wednesday" [(ngModel)]="flight.day" />
+        <input type="radio" name="flight_day" value="DayOdWeek.Thursday" [(ngModel)]="flight.day" />
+        <input type="radio" name="flight_day" value="DayOdWeek.Friday" [(ngModel)]="flight.day" />
+        <input type="radio" name="flight_day" value="DayOdWeek.Saturday" [(ngModel)]="flight.day" />
+        <input type="radio" name="flight_day" value="DayOdWeek.Sunday" [(ngModel)]="flight.day" />
+    </div>
+</editable-form>

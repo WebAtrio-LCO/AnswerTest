@@ -1,0 +1,28 @@
+﻿<!--<filter-container (onApply)="onApplyFilters()" (onReset)="onResetFilters()">
+
+</filter-container>-->
+
+<h2>List of all flights</h2>
+<hr />
+
+
+<table>
+    <tr>
+        <th>Identifier</th>
+        <th>Departure</th>
+        <th>Destination</th>
+        <th>AirCraft</th>
+        <th>Day</th>
+        <th>Distance</th>
+        <th>Fuel needed</th>
+    </tr>
+    <tr *ngFor="let flight of flightList" class="highlight">
+        <td>{{flight.Identifier}}</td>
+        <td>{{flight.departureAirport.Name}}</td>
+        <td>{{flight.arrivalAirport.Name}}</td>
+        <td>{{flight.aircraft.Name}}</td>
+        <td>{{flight.day}}</td>
+        <td>{{flight.distance}}</td>
+        <td>{{flight.fuelNeeded}}</td>
+    </tr>
+</table>

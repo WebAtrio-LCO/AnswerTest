@@ -1,0 +1,6 @@
+﻿<div>
+    <form id="txt_editableForm" (ngSubmit)="sent()" #editableForm="ngForm">
+        <ng-content></ng-content>
+        <button type="submit" class="btn btn-primary" [disabled]="!editableForm.form.valid">{{ sendButton }}</button>
+    </form>
+</div>

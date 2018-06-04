@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightManagerSimulator.Angular.GUI", "FlightManagerSimulator.Angular.GUI\FlightManagerSimulator.Angular.GUI.csproj", "{B7F21168-EAF6-4024-89A2-9565EECB2F70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightManagerSimulator.Angular.API", "FlightManagerSimulator.Angular.API\FlightManagerSimulator.Angular.API.csproj", "{BD80E947-7577-4AD2-979A-E2306CE3FE78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightManagerSimulator.BusinessLayer", "FlightManagerSimulator.BusinessLayer\FlightManagerSimulator.BusinessLayer.csproj", "{F007E2E2-A1C6-4B91-AF16-AF69D7CC3FC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightManagerSimulator.DataLayer", "FlightManagerSimulator.DataLayer\FlightManagerSimulator.DataLayer.csproj", "{1A09D85C-03D0-4FFB-ABF7-3D52A7E2E96D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightManagerSimulator.DataLayer.DatabaseGenerator", "FlightManagerSimulator.DataLayer.DatabaseGenerator\FlightManagerSimulator.DataLayer.DatabaseGenerator.csproj", "{D5605F77-912C-471C-9A13-C6BE26D7E639}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightManagerSimulator.Common", "FlightManagerSimulator.Common\FlightManagerSimulator.Common.csproj", "{A70C7881-6A9D-4A29-866A-ADD9430B6CC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Database", "1_Database", "{29F4975C-6830-4223-9C54-E3C20007D2D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_DataAccessLayer", "2_DataAccessLayer", "{54E8A547-E6FC-4BE2-9B26-6FC80AD2F506}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_BusinnessLayer", "3_BusinnessLayer", "{80FBDD0A-6857-4C10-BA36-8135C5F177BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4_PresentationLayer", "4_PresentationLayer", "{5EE94477-646F-4809-AAB2-555351E5F2B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{BB3EF1D1-415D-4F13-867A-848074EAD247}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7F21168-EAF6-4024-89A2-9565EECB2F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7F21168-EAF6-4024-89A2-9565EECB2F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7F21168-EAF6-4024-89A2-9565EECB2F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7F21168-EAF6-4024-89A2-9565EECB2F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD80E947-7577-4AD2-979A-E2306CE3FE78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD80E947-7577-4AD2-979A-E2306CE3FE78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD80E947-7577-4AD2-979A-E2306CE3FE78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD80E947-7577-4AD2-979A-E2306CE3FE78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F007E2E2-A1C6-4B91-AF16-AF69D7CC3FC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F007E2E2-A1C6-4B91-AF16-AF69D7CC3FC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F007E2E2-A1C6-4B91-AF16-AF69D7CC3FC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F007E2E2-A1C6-4B91-AF16-AF69D7CC3FC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A09D85C-03D0-4FFB-ABF7-3D52A7E2E96D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A09D85C-03D0-4FFB-ABF7-3D52A7E2E96D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A09D85C-03D0-4FFB-ABF7-3D52A7E2E96D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A09D85C-03D0-4FFB-ABF7-3D52A7E2E96D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5605F77-912C-471C-9A13-C6BE26D7E639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5605F77-912C-471C-9A13-C6BE26D7E639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5605F77-912C-471C-9A13-C6BE26D7E639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5605F77-912C-471C-9A13-C6BE26D7E639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A70C7881-6A9D-4A29-866A-ADD9430B6CC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A70C7881-6A9D-4A29-866A-ADD9430B6CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A70C7881-6A9D-4A29-866A-ADD9430B6CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A70C7881-6A9D-4A29-866A-ADD9430B6CC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B7F21168-EAF6-4024-89A2-9565EECB2F70} = {5EE94477-646F-4809-AAB2-555351E5F2B5}
+		{BD80E947-7577-4AD2-979A-E2306CE3FE78} = {5EE94477-646F-4809-AAB2-555351E5F2B5}
+		{F007E2E2-A1C6-4B91-AF16-AF69D7CC3FC7} = {80FBDD0A-6857-4C10-BA36-8135C5F177BD}
+		{1A09D85C-03D0-4FFB-ABF7-3D52A7E2E96D} = {54E8A547-E6FC-4BE2-9B26-6FC80AD2F506}
+		{D5605F77-912C-471C-9A13-C6BE26D7E639} = {29F4975C-6830-4223-9C54-E3C20007D2D6}
+		{A70C7881-6A9D-4A29-866A-ADD9430B6CC8} = {BB3EF1D1-415D-4F13-867A-848074EAD247}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {844F2387-F54F-45D6-B929-A3D7CC93F753}
+	EndGlobalSection
+EndGlobal
